@@ -43,3 +43,9 @@ Project local installation instructions:
     CREATE USER 'bloguser'@'localhost' IDENTIFIED BY 'blogpassword';
 
     GRANT all ON blog.* TO bloguser;
+
+9. *install npm*
+
+    sudo apt-get install npm
+    sudo apt-get install nodejs
+    sudo npm install bower -g
