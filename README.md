@@ -4,23 +4,23 @@ Blog
 Project local installation instructions:
 ----------------------------------------
 
-#. **Install virtualenvwrapper:**
+1. **Install virtualenvwrapper:**
 
     pip install virtualenvwrapper
 
-#. **Create home venv variable:**
+2. **Create home venv variable:**
 
     export WORKON_HOME=~/Envs
 
-#. **Create home venv dir:**
+3. **Create home venv dir:**
 
     mkdir $WORKON_HOME
 
-#. **Activate venv wrapper (you may also add this command to .bashrc):**
+4. **Activate venv wrapper (you may also add this command to .bashrc):**
 
     source /usr/local/bin/virtualenvwrapper.sh
 
-#. **Make venv:**
+5. **Make venv:**
 
     mkvirtualenv blog
 
@@ -28,15 +28,15 @@ Project local installation instructions:
 
     workon blog
 
-#. **Clone the project:**
+6. **Clone the project:**
 
     git clone git@github.com:bo858585/blog.git
 
-#. **Install packages:**
+7. **Install packages:**
 
     pip install -r requirements.txt
 
-#. **Set mysql password:**
+8. **Set mysql password:**
 
     mysql -p -u root
 
