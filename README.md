@@ -28,20 +28,16 @@ Project local installation instructions:
 
     workon blog
 
-6. **Install packages:**
-
-    $WORKON_HOME/blog/bin/pip install django==1.5
-
-7. **Clone the project:**
+6. **Clone the project:**
 
     git clone git@github.com:bo858585/blog.git
 
-8. **Install mysql python lib:**
+7. **Install packages:**
 
-    $WORKON_HOME/blog/bin/pip install mysql-python
+    pip install -r requirements.txt
 
-9. **Set mysql password:**
+8. **Set mysql password:**
 
     mysql -p -u root
-    > CREATE USER 'bloguser'@'localhost' IDENTIFIED BY 'blogpassword';
-    > GRANT all ON blog.* TO bloguser;
+    CREATE USER 'bloguser'@'localhost' IDENTIFIED BY 'blogpassword';
+    GRANT all ON blog.* TO bloguser;
