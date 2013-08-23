@@ -44,10 +44,14 @@ Project local installation instructions:
 
     GRANT all ON blog.* TO bloguser;
 
-9. *install bower*
+9. *Install bower*
 
     sudo apt-get install npm
 
     sudo apt-get install nodejs
 
     sudo npm install bower -g
+
+10. *Install bootstrap*
+
+    bower install bootstrap
