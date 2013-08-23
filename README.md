@@ -38,6 +38,8 @@ Project local installation instructions:
 
 8. **Set mysql password:**
 
+::
+
     mysql -p -u root
     CREATE USER 'bloguser'@'localhost' IDENTIFIED BY 'blogpassword';
     GRANT all ON blog.* TO bloguser;
