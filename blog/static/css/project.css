@@ -1,0 +1,29 @@
+div.blog {
+    margin-left: 40px;
+    margin-right: 40px;
+
+}
+
+div.blog div.post {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+div.blog div.post div.post_title {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+div.blog div.post div.post_text {
+
+}
+
+div.blog div.post div.post_date {
+    margin-bottom: 5px;
+    font-size: 12px;
+}
+
+h1.blog_title {
+    margin-left: 10px;
+    color: #3333CC;
+}

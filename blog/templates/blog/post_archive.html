@@ -5,20 +5,23 @@
 {% endblock %}
 
 {% block content %}
-    <h1>Блог по программированию на Python/Django</h1>
-    <div>
-        <ul>
-            {% for post in object_list %}
-                <li>
-                    {{ post.publication_date }}: {{ post.title }}
-                    <div>{{ post.text }}</div>
-                </li>
-            {% endfor %}
-        </ul>
+    <h1 class="blog_title">Блог по программированию на Python/Django</h1>
+    <div class="blog">
+        {% for post in object_list %}
+            <div class="post">
+                <div class="post_title">
+                    {{ post.title }}
+                </div>
+                <div class="post_date">
+                    {{ post.publication_date }}
+                </div>
+                <div class="post_text">
+                    {{ post.text }}
+                </div>
+            </div>
+        {% endfor %}
     </div>
     <form action="{% url 'post_to_blog' %}" method="get">{% csrf_token %}
         <input type="submit" value="Add post">
     </form>
-
-
 {% endblock %}
