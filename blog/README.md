@@ -1,44 +1,57 @@
-blog
+Blog
 ====
 
-<ol>
-    <li>
-        <h5>Install virtualenvwrapper:</h5>
-        <div>pip install virtualenvwrapper</div>
-    </li>
-    <li>
-        <h5>Create home venv variable:</h5>
-        <div>export WORKON_HOME=~/Envs</div>
-    </li>
-    <li>
-        <h5>Create home venv dir:</h5>
-        <div>mkdir $WORKON_HOME</div>
-    </li>
-    <li>
-        <h5>Activate venv wrapper:</h5>
-        <div>source /usr/local/bin/virtualenvwrapper.sh (also you may add this command to .bashrc)</div>
-    </li>
-    <li>
-        <h5>Make venv:</h5>
-        <div>mkvirtualenv blog</div>
-        <h5>Or switch to the venv, if you already created it:</h5>
-        <div>workon blog</div>
-    </li>
-    <li>
-        <h5>Install packages:</h5>
-        <div>$WORKON_HOME/blog/bin/pip install django==1.5</div>
-    </li>
-    <li>
-        <h5>Clone the project:</h5>
-        <div>git clone git@github.com:bo858585/blog.git</div>
-    </li>
-    <li>
-        <h5>Install mysql python lib:</h5>
-        <div>$WORKON_HOME/blog/bin/pip install mysql-python</div>
-    </li>
-    <li>
-        <h5>Set mysql password</h5>
-        <div>mysql -p -u root</div>
-        <div>CREATE USER 'bloguser'@'localhost' IDENTIFIED BY 'blogpassword';</div>
-        <div>GRANT all ON blog.* TO bloguser;</div>
-</oi>
+Project local installation instructions:
+----------------------------------------
+
+1. **Install virtualenvwrapper:**
+::
+
+    pip install virtualenvwrapper
+
+2. **Create home venv variable:**
+::
+
+    export WORKON_HOME=~/Envs
+
+3. **Create home venv dir:**
+::
+
+    mkdir $WORKON_HOME
+
+4. **Activate venv wrapper (you may also add this command to .bashrc):**
+::
+
+    source /usr/local/bin/virtualenvwrapper.sh
+
+5. **Make venv:**
+::
+
+    mkvirtualenv blog
+
+**Or switch to the venv, if you already created it earlier:**
+::
+
+    workon blog
+
+6. **Install packages:**
+::
+
+    $WORKON_HOME/blog/bin/pip install django==1.5
+
+7. **Clone the project:**
+::
+
+    git clone git@github.com:bo858585/blog.git
+
+8. **Install mysql python lib:**
+::
+
+    $WORKON_HOME/blog/bin/pip install mysql-python
+
+9. **Set mysql password:**
+::
+
+    mysql -p -u root
+    > CREATE USER 'bloguser'@'localhost' IDENTIFIED BY 'blogpassword';
+    > GRANT all ON blog.* TO bloguser;
