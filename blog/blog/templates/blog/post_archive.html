@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% block title %}
+    Блог по программированию на Python/Django
+{% endblock %}
+
+{% block content %}
+    <h1>Блог по программированию на Python/Django</h1>
+    <div>
+        <ul>
+            {% for post in object_list %}
+                <li>
+                    {{ post.publication_date }}: {{ post.title }}
+                    <div>{{ post.text }}</div>
+                </li>
+            {% endfor %}
+        </ul>
+    </div>
+    <form action="{% url 'post_to_blog' %}" method="get">{% csrf_token %}
+        <input type="submit" value="Add post">
+    </form>
+
+
+{% endblock %}
