@@ -24,7 +24,7 @@ Project local installation instructions:
 
     mkvirtualenv blog
 
-**Or switch to the venv, if you already created it earlier:**
+    **Or switch to the venv, if you already created it earlier:**
 
     workon blog
 
