@@ -4,8 +4,7 @@ Blog
 Project local installation instructions:
 ----------------------------------------
 
-1. **Install virtualenvwrapper:**
-::
+1. **Install virtualenvwrapper:**::
 
     pip install virtualenvwrapper
 
