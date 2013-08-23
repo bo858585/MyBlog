@@ -44,7 +44,7 @@ Project local installation instructions:
 
     GRANT all ON blog.* TO bloguser;
 
-9. *install npm*
+9. *install bower*
 
     sudo apt-get install npm
 
