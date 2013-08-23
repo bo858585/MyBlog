@@ -47,5 +47,7 @@ Project local installation instructions:
 9. *install npm*
 
     sudo apt-get install npm
+
     sudo apt-get install nodejs
+
     sudo npm install bower -g
