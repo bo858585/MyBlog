@@ -6,7 +6,6 @@ Project local installation instructions:
 
 1. **Install virtualenvwrapper:**
 ::
-
     pip install virtualenvwrapper
 
 2. **Create home venv variable:**
