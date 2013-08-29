@@ -55,3 +55,9 @@ Project local installation instructions:
 10. **Install bootstrap:**
 
     bower install bootstrap
+
+Running tests at blog app:
+--------------------------
+    cd blog
+    python manage.py test blog
+
