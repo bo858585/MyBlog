@@ -21,7 +21,7 @@
             </div>
         {% endfor %}
     </div>
-    <form action="{% url 'post_to_blog' %}" method="get">{% csrf_token %}
+    <form action="{% url 'post_to_blog' %}" method="get">
         <input type="submit" value="Add post">
     </form>
 {% endblock %}
